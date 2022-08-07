@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#122331"
-    tools:context=".View.Downloads">
+    tools:context=".View.MyPrime">
 
     <TextView
         android:id="@+id/textView3"
@@ -14,7 +14,7 @@
         android:fontFamily="@font/ubuntu_bold"
         android:textSize="20sp"
         android:textColor="@color/white"
-        android:text="Downloads"
+        android:text="Meu Prime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,4 +33,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

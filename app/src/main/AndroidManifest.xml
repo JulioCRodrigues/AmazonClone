@@ -14,7 +14,10 @@
         android:theme="@style/Theme.AmazonClone"
         tools:targetApi="31">
         <activity
-            android:name=".Downloads"
+            android:name=".View.MyPrime"
+            android:exported="false" />
+        <activity
+            android:name=".View.Downloads"
             android:exported="false" />
         <activity
             android:name=".View.Home"

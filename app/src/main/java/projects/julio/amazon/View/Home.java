@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import projects.julio.amazon.Adapter.HomeAdapter;
 import projects.julio.amazon.Adapter.HomeAdapterAssistidos;
@@ -52,5 +55,29 @@ public class Home extends AppCompatActivity {
         adapterCategoria.setDropDownViewResource(androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item);
         spinner.setSelection(0, false);
         spinner.setAdapter(adapterCategoria);
+
+        // Navegação entre as telas
+        binding.bottomNavigation.setOnItemSelectedListener(item -> {
+
+            switch (item.getItemId()){
+                case R.id.page_1:
+                    Intent intent = new Intent(this, Home.class);
+                    startActivity(intent);
+                    break;
+                case R.id.page_2:
+                    Intent intentDown = new Intent(getApplicationContext(), Downloads.class);
+                    startActivity(intentDown);
+                    break;
+                case R.id.page_3:
+                    Intent intentPrime = new Intent(getApplicationContext(), MyPrime.class);
+                    startActivity(intentPrime);
+                    break;
+
+            }
+
+
+
+            return true;
+        });
     }
 }
