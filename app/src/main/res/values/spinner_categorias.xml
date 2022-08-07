@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categoria_array">
+        <item>Comédia</item>
+        <item>Ação</item>
+        <item>Suspense</item>
+        <item>Ficção</item>
+        <item>Terror</item>
+        <item>Documentário</item>
+        <item>Animação</item>
+        <item>Adicionados recentemente</item>
+    </string-array>
+
+</resources>

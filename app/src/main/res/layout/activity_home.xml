@@ -94,7 +94,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/ivCategorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -102,6 +102,15 @@
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    <Spinner
+        android:id="@+id/spCategorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"   />
 
     <TextView
         android:id="@+id/textView4"
