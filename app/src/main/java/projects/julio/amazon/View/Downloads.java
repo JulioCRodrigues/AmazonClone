@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import projects.julio.amazon.R;
+
 public class Downloads extends AppCompatActivity {
 
     @Override

@@ -50,6 +50,7 @@ public class Home extends AppCompatActivity {
         Spinner spinner = binding.spCategorias;
         ArrayAdapter<CharSequence> adapterCategoria = ArrayAdapter.createFromResource(this, R.array.categoria_array, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
         adapterCategoria.setDropDownViewResource(androidx.constraintlayout.widget.R.layout.support_simple_spinner_dropdown_item);
+        spinner.setSelection(0, false);
         spinner.setAdapter(adapterCategoria);
     }
 }
