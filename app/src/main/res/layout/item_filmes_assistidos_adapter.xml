@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivFilmesAssistidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:foreground="@drawable/border_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/the_boys" />
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:background="@drawable/play_button"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFilmesAssistidos"
+        app:layout_constraintEnd_toEndOf="@+id/ivFilmesAssistidos"
+        app:layout_constraintStart_toStartOf="@+id/ivFilmesAssistidos"
+        app:layout_constraintTop_toTopOf="@+id/ivFilmesAssistidos"
+        app:srcCompat="@drawable/ic_play" />
+</androidx.constraintlayout.widget.ConstraintLayout>
